@@ -1,0 +1,86 @@
+/**
+ * TOKENS.CSS
+ * Sistema de diseño centralizado - "Centro de Recuperación de Datos"
+ * Xavier Estefano Vásquez Yataco | Portafolio Profesional
+ */
+
+:root {
+  /* Paleta Base - Oscuro Forense */
+  --bg-core: #07090e;
+  --bg-surface: #0c111a;
+  --bg-surface-elevated: #111825;
+  --bg-surface-overlay: rgba(12, 17, 26, 0.85);
+  --border-dim: #1a2333;
+  --border-mid: #25334a;
+  --border-focus: #00f0ff;
+
+  /* Color de Acento Único: Cian Forense de Alta Visibilidad */
+  --accent: #00f0ff;
+  --accent-rgb: 0, 240, 255;
+  --accent-hover: #38f4ff;
+  --accent-muted: rgba(0, 240, 255, 0.12);
+  --accent-glow: 0 0 20px rgba(0, 240, 255, 0.35);
+  --accent-glow-sm: 0 0 8px rgba(0, 240, 255, 0.25);
+
+  /* Estados de Integridad */
+  --status-active: #00f0ff;
+  --status-active-bg: rgba(0, 240, 255, 0.1);
+  --status-recovered: #10b981;
+  --status-recovered-bg: rgba(16, 185, 129, 0.12);
+  --status-warning: #f59e0b;
+  --status-warning-bg: rgba(245, 158, 11, 0.12);
+  --status-bad: #ef4444;
+  --status-bad-bg: rgba(239, 68, 68, 0.15);
+
+  /* Texto y Contraste WCAG AA */
+  --text-primary: #f0f4f8;
+  --text-secondary: #94a3b8;
+  --text-muted: #627288;
+  --text-inverse: #07090e;
+
+  /* Tipografías */
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, Monaco, monospace;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Cantarell, sans-serif;
+
+  /* Espaciados */
+  --space-2xs: 0.25rem; /* 4px */
+  --space-xs:  0.5rem;  /* 8px */
+  --space-sm:  0.75rem; /* 12px */
+  --space-md:  1rem;    /* 16px */
+  --space-lg:  1.5rem;  /* 24px */
+  --space-xl:  2rem;    /* 32px */
+  --space-2xl: 3rem;    /* 48px */
+  --space-3xl: 4.5rem;  /* 72px */
+
+  /* Radios de Borde */
+  --radius-xs: 3px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+
+  /* Transiciones y Sombras */
+  --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+
+  --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.4);
+  --shadow-card: 0 10px 30px -10px rgba(0, 0, 0, 0.6);
+  --shadow-elevation: 0 20px 40px -15px rgba(0, 0, 0, 0.8);
+
+  /* Layout */
+  --container-max: 1200px;
+  --header-height: 68px;
+}
+
+/* Soporte para modo de movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

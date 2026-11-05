@@ -1,0 +1,13 @@
+# Dependencias y logs
+node_modules/
+*.log
+npm-debug.log*
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs
+.vscode/
+.idea/
